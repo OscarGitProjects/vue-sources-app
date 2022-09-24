@@ -1,4 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import MainDialog from "./components/UI/MainDialog.vue";
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.component("main-dialog", MainDialog);
+
+app.mount("#app");
